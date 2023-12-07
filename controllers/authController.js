@@ -39,6 +39,8 @@ controller.register = async (req, res) => {
       console.log(error);
       res.render("auth-register", { layout: "auth", message: "Can not register new account!" });
     }
+  } else {
+    res.render("auth-register", { layout: "auth", message: "You must accept terms and conditions!" });
   }
 }
 
