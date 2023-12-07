@@ -33,7 +33,7 @@ controller.register = async (req, res) => {
       await User.create({ username, password, firstName, lastName });
       res.render("auth-login", {
         layout: "auth",
-        message: "You cna now login using your registration"
+        message: "You can now login using your registration"
       })
     } catch (error) {
       console.log(error);
