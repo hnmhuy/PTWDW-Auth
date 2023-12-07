@@ -6,6 +6,8 @@ const expressHbs = require("express-handlebars");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
 
+app.set("view", __dirname + "/views");
+
 // Thiet lap thu muc Static
 app.use(express.static(__dirname + "/html"));
 
